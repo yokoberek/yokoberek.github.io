@@ -5,8 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Doe - Software Engineer</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter-tight:400,500,600,700,800,900" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+              'inter': ['Inter Tight', 'sans-serif'],
+            }
+          }
+        }
+    </script>
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-gray-100 text-gray-900 font-inter">
 
 <header class="bg-gray-800 text-white py-6">
     <div class="container mx-auto text-center">
@@ -23,7 +34,7 @@
     </div>
 </nav>
 
-<div class="container mx-auto py-8">
+<div class="max-w-screen-lg mx-auto py-8">
     <section id="aboutme" class="mb-12">
         <h2 class="text-3xl font-bold mb-4">About Me</h2>
         <p class="text-lg leading-relaxed">Hello! I am John Doe, a final year student at an institute in Surabaya, Indonesia. I have a passion for building open source projects and have been working in the software industry for the past three years. My expertise lies in backend development and mobile applications.</p>
